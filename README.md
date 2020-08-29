@@ -55,5 +55,35 @@ SELECT DISTINCT dis_name FROM dis_channels
 SELECT refiner_name, units_sold
 FROM refinery_clients
 WHERE units_sold > 10000
- 
- 
+
+SELECT dis_name, sale_id
+FROM dis_channels
+WHERE sale_id IN (1001, 1003)
+
+SELECT refiner_name, units_sold
+FROM refinery_clients
+ORDER BY units_sold DESC;
+
+SELECT dis_name, location
+FROM dis_channels
+GROUP BY location, dis_name
+ORDER BY location
+
+SELECT dis_channels.dis_name,
+refinery_clients.units_sold
+FROM dis_channels
+INNER JOIN refinery_clients ON 
+dis_channels.sale_id = refinery_clients.sale_id
+
+SELECT COUNT(dis_name)
+FROM dis_channels
+
+SELECT AVG(units_sold)
+FROM refinery_clients
+
+SELECT SUM(units_sold)
+FROM refinery_clients
+WHERE status_sent = 'true'
+
+SELECT MIN(units_sold)
+FROM refinery_clients
