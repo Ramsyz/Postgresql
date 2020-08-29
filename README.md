@@ -1,39 +1,5 @@
 # Postgresql Data Analysis
 
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Ramsyz 
-Ramsyz
-/
-Postgresql
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Create POSTGRESQL Data Analysis
-
-database
- master
-@Ramsyz
-Ramsyz committed 25 seconds ago 
-0 parents commit 792a3d2dbcae1366de52f98cf099046443711a55
-Showing  with 56 additions and 0 deletions.
- 56  POSTGRESQL Data Analysis 
-@@ -0,0 +1,56 @@
-## POSTGRESQL 
 CREATE TABLE refinery_clients (
  refiner_name TEXT NOT NULL,
  units_sold INT NOT NULL,
